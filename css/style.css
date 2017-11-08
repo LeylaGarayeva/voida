@@ -1,0 +1,452 @@
+--------------------------------------*/
+/*          Leyla Garayeva              */
+/*--------------------------------------*/
+	html,body{
+		margin: 0;
+	}
+	*{
+		list-style: none;
+		text-decoration: none;
+	}
+	*, *::before, *::after {
+	    transition: all .3s ease-in-out;
+	    transition-property: all;
+	    transition-duration: 0.3s;
+	    transition-timing-function: ease-in-out;
+	    transition-delay: initial;
+	}
+
+/*=============================================*/
+
+	body{
+		 background-image: url("../img/Asset352.png");
+    	 background-repeat: no-repeat;
+    	 background-size: 100% 420px;
+	}
+	
+	.main{
+		margin: 3% 19% 0% 19%;
+		color:#d3d362;
+		background-color: rgba(19,41,85,0.5);
+		/*padding: 5px;*/
+	}
+	.float{
+		float: left;
+	}
+
+/*  HEADER  */
+	header{
+		font-size: 10px;
+	}
+	.logo{
+		padding: 13px 0px 0px 29px;
+	}
+	.logo img{
+		width: 40%;
+	}
+	.logo span{
+		font-size: 14px;
+		color:white;
+		padding-left: 4px;
+	}
+	.header_center_icon{
+		 padding: 35px 10px 0px 3px;
+		 font-weight: bold;
+	}
+	.header_center_icon sup{
+		border-radius: 100%;
+		background-color: #dd3d3b;
+		color:white;
+		padding: 2px 5px;
+    	font-weight: bold;
+	}
+	.header_right{
+		padding: 35px 10px 0px 10px;
+		font-weight: bold;
+	}
+	.header_right .guest{
+		background-color: #352e0b;
+		border:2px solid #989c37;
+		border-radius: 7px;
+        padding: 9px 14px;
+	}
+
+	.header_right>span{
+		    padding-right: 8px;
+	}
+	.sosial_icons img{
+		padding: 5px;
+	}
+	.sosial_icons{
+	    margin-left: 35px;
+	}
+
+
+
+
+	/*menu*/
+	.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color:#473f0e;
+	    min-width: 200px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	    /*margin-top: 5px;*/
+	}
+
+	.dropdown-content a {
+	    color: #b5b350;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #f1f1f1;
+		text-decoration: none;
+		color:#b5b350;
+	}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+	    background-color: #3e8e41;
+	}
+	header ul li{
+		display: inline;
+		font-size: 10px;
+		font-weight: 600;
+		padding: 0px 4px;
+	}
+	header ul{
+		 margin: 0px;
+        padding: 4px 15px;
+	}
+	.search{
+		position: relative;
+	}
+	.search img{
+		position: absolute;
+		top:0;
+		left: 5px;
+	}
+	.search input{
+		text-indent: 30px;
+	    color: #998a1d;
+	    padding-bottom: 6px;
+	}
+	.menu{
+		background: #827717;
+    	    margin: 0px 4px;
+    	border-bottom: 3px solid #352e0b;
+	}
+	.guest img:first-child{
+	    background: white;
+	    border-radius: 100%;
+	    padding: 3px;
+
+	}
+/* /HEADER */
+
+
+
+/* CONTENT */
+
+	/* SLIDER*/
+		 .slider{
+			height: 320px;
+		}
+		.mySlides img{
+			width: 100%;
+			height: 100%;
+		}
+		.mySlides {display:none}
+
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		}
+		.blok_dot{
+			position: absolute;
+			bottom: 10px;
+			right: 50%;
+		}
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 43%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		}
+
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		.numbertext {
+		  color: #565b16;
+		  font-size: 20px;
+		  padding: 10px 22px;
+    	  position: absolute;
+   		  font-weight: bold;
+           top: 22%;
+          left: 10%;
+          background: black;
+
+		}
+		.slider_middletext{
+		 color: #565b16;
+		  font-size: 15px;
+		  padding: 10px 22px;
+    	  position: absolute;
+   		  font-weight: bold;
+           top: 43%;
+          left: 10%;
+          background: black;	
+		}
+		.slider_bottomtext{
+		  color: white;
+		  font-size: 13px;
+		  padding: 14px 7px;
+    	  position: absolute;
+   		  font-weight: bold;
+          top: 61%;
+          left: 10%;
+          background: #22a6e7;	
+          border-radius: 10px;
+		}
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+		}
+	/* /SLIDER*/
+
+
+	/*TOP GAMES*/
+		.left_side{
+			padding: 15px;
+		}
+		.top_games_header{
+		    background: white;
+		    padding: 15px;
+    		color: black;
+    		font-weight: bold;
+    		font-size: 18px;
+		}
+		.top_games_header span{
+			color:#d3d362;
+			margin-left: 7px;
+		} 
+		.top_games{
+			background: #e6e6e6;
+			
+		}
+		.left_blok .line{
+			background: #2b2b2b;
+			width: 96%;
+			height: 2px;
+			margin: 0px 2%;
+		}
+		.left_blok{
+			height: 350px;
+			overflow-x: auto;
+			width: 100%;
+			overflow-x: hidden;
+			background: black;
+			color:white;
+
+		}
+		.left_blok .main{
+			width: 100%;
+			border: 2px solid #827717;;
+            box-sizing: border-box;
+            height: 85px;
+		}
+		.center_p2{
+			font-size: 9px;
+		}
+		.center_p{
+			color:#d3d362;			
+		}
+		.count_radius{
+			 border-radius: 100%;
+    		 background: #827717;
+             padding: 3px 4px;
+		}
+		.left_blok .blok1{
+			 padding: 6px 5px;
+		}
+		.stars_img{
+			background: #2b2b2b;
+			transform: skew(-30deg, 0deg);
+			width: 55%;
+			margin-right: 10px;
+			}
+		.stars_heart{
+			background: #2b2b2b;
+			transform: skew(-30deg, 0deg);
+			width: 35%;
+		}
+		.left_blok .active{
+			background: #c0ca33;
+		}
+		.center_p1{
+			color:#1b1b1a;
+			font-weight: bold;
+		}
+		.count_radius1{
+			 border-radius: 100%;
+    		 background: #dce775;
+             padding: 3px 4px;
+             color:#847a19;
+		}
+		.center2{
+			padding: 15px 15px  15px 0px;
+			margin-left: -43px;
+		}
+		.center2 img{
+			width: 100%;
+			height: 350px;
+			position: relative;
+		}
+		.center2_overlow{
+			position: absolute;
+			background: rgba(0,0,0,0.5);
+			top: 14px;
+    		right: 28px;
+    		height: 92%;
+   			 width: 100%;	
+		}
+		.begin{
+			position: absolute;
+		    top: 48%;
+		    left: 38%;
+		    background: #837a18;
+		    color: white;
+		    padding: 8px 32px;
+		    border-radius: 7px;
+		    font-weight: bold;
+		}
+	/*TOP / GAMES*/
+
+	/* POPULAR GAMES*/
+		    #owl-demo .item{
+	        background: #e6e6e6;
+	       /* padding: 30px 0px;*/
+	        margin: 5px;
+	        color: #FFF;
+	        -webkit-border-radius: 3px;
+	        -moz-border-radius: 3px;
+	        border-radius: 3px;
+	        text-align: center;
+          }
+		.item_bottom{
+			background: #333333;
+			height: 170px;
+            padding: 5px;
+		}
+		.item_bottom>p{
+			font-size: 9px;
+			color:#c6c65e;
+			text-align: left;
+			font-weight: bold;
+		}
+		.item_bottom p:nth-of-type(2){
+			color:white;
+			font-weight: normal;
+		}
+		.fl{
+			background: #4d4d4d;
+			float: right;
+			padding: 1px 10px;
+		}
+		.pl{
+			background: #4d4d4d;
+			float: left;
+			padding: 1px 10px;
+		}
+		.popular_games{
+			background: #e6e6e6;
+		}
+	/* / POPULAR GAMES*/
+
+
+	/* NEW GAMES*/
+	.new_games{
+		margin-left:30px;
+	}
+		.bloks img{
+			width: 100%;
+		}
+	/* / NEW GAMES*/
+
+/* /CONTENT 

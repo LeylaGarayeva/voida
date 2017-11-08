@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>Oyun</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+
+</head>
+<body>
+	<header>
+		<img src="img/Asset352.png" alt="" />
+	</header>
+	
+	<div id="container">
+		<div class="rows">
+			<div class="menu">      <!--  MENU OPEN  -->
+				<ul>
+					<li class="active">
+						<img src="img/Asset 19.png" alt="" />
+						<a href="#"><h6>STRATEGY</h6></a>
+					</li>
+					<li>
+						<img src="img/Asset 20.png" alt="" />
+						<a href="#"><h6>RACING</h6></a>
+					</li>
+					<li>
+						<img src="img/Asset 21.png" alt="" />
+						<a href="#"><h6>SHOOTING</h6></a>
+					</li>
+					<li>
+						<img src="img/Asset 22.png" alt="" />
+						<a href="#"><h6>ACTION</h6></a>
+					</li>
+					<li>
+						<img src="img/Asset 23.png" alt="" />
+						<a href="#"><h6>SPORTS</h6></a>
+					</li>
+					<li>
+						<img src="img/Asset 24.png" alt="" />
+						<a href="#"><h6>FIGHTING</h6></a>
+					</li>
+					<li>
+						<img src="img/Asset 25.png" alt="" />
+						<a href="#"><h6>FUNNY</h6></a>
+					</li>
+					<li>
+						<img src="img/Asset 26.png" alt="" />
+						<a href="#">
+							<h6>SEE MORE</h6>
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</a>
+						<ul class="bottom">
+							<li>
+								<img src="img/Asset 25.png" alt="" />
+								<a href="#"><h6>FUNNY</h6></a>
+							</li>
+							<li>
+								<img src="img/Asset 24.png" alt="" />
+								<a href="#"><h6>FIGHTING</h6></a>
+							</li>
+							<li>
+								<img src="img/Asset 25.png" alt="" />
+								<a href="#"><h6>FUNNY</h6></a>
+							</li>
+							<li>
+								<img src="img/Asset 24.png" alt="" />
+								<a href="#"><h6>FIGHTING</h6></a>
+							</li>
+							<li>
+								<img src="img/Asset 25.png" alt="" />
+								<a href="#"><h6>FUNNY</h6></a>
+							</li>
+							<li>
+								<img src="img/Asset 24.png" alt="" />
+								<a href="#"><h6>FIGHTING</h6></a>
+							</li>
+							<li>
+								<img src="img/Asset 25.png" alt="" />
+								<a href="#"><h6>FUNNY</h6></a>
+							</li>
+						</ul>
+					</li>
+					
+				</ul>
+
+				<form>
+					<button><img src="img/Asset 13.png"/></button>
+					<input type="text" name="" value="" id="">
+				</form>
+
+						<a href="#" class="profile"><img src="img/Asset12.png" alt="" /></a>
+					
+			</div>       <!--  MENU CLOSE  -->
+		</div>
+
+	</div>
+			<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+		<script type="text/javascript">	
+			$(function() {
+			
+				var Page = (function() {
+
+					var $navArrows = $( '#nav-arrows' ),
+						$nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+								
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				/*
+				
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+			
+			});
+		</script>
+</body>
+</html>
+
+
+<style>
+       	*{margin:0; padding:0; box-sizing:border-box;}
+header {
+	width:100%;
+	height:900px;
+	position:relative;
+	overflow:hidden;
+}
+
+header img{
+	width:100%;
+	height:100%;
+}                   /* CONTAINER   */
+ #container {
+	width:70%;
+	//height:1000px;
+	position:absolute;
+	top:40px;
+	left:15%;
+	background:rgba(0,0,0,.5);
+	padding:10px;
+}
+
+#container .rows {
+	width:100%;
+	clear:both;
+}
+                       
+			
+
+				   
+				   /* MENU OPEN   */
+#container .rows .menu {
+	width:100%;
+	border-bottom:2px solid #473f0e;
+	background:#827717;
+	height:40px;
+	
+}
+
+#container .rows .menu ul{
+	list-style:none;
+}
+
+#container .rows .menu ul li {
+	float:left;
+	padding:5px;
+	padding-top:12px;
+	border-right:1px solid #5b5012;
+	height: 40px;
+}
+
+#container .rows .menu ul li:hover {
+	background:#5b5012;
+}
+
+#container .rows .menu ul .active {
+	background:#5b5012;
+}
+
+#container .rows .menu ul li img, #container .rows .menu ul li a {
+	float:left;
+}
+
+#container .rows .menu ul li img {
+	width:15%;
+	margin-right:5px;
+}
+
+#container .rows .menu ul li a {
+	text-decoration:none;
+	color:#cece5e;
+	display:block;
+	padding-bottom:2px;
+}
+
+#container .rows .menu ul li a h6, #container .rows .menu ul li a .fa{
+	float:left;
+}
+
+#container .rows .menu ul li a .fa {  //iwlemir kod
+	font-size:14px;
+	margin-left:60%;
+}
+
+#container .rows .menu ul li .bottom {
+	background:#5b5012;
+	float:left;
+	position:absolute;
+	width:20%;
+	height:200px;
+	margin-top:2.8%;
+	margin-left: -5px;
+	padding:5px;
+	z-index:999;
+	display: none;
+}
+
+
+
+#container .rows .menu ul li:hover .bottom {
+	display: block;
+}
+
+#container .rows .menu form {
+	background-color: #fff;
+	width: 22%;
+	height: 30px;
+	float: left;
+	margin-left: 5px;
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+#container .rows .menu form button, #container .rows .menu form input {
+	float: left;
+	margin-right: 3px;
+}
+
+#container .rows .menu form button {
+	border: none;
+	background-color: transparent;
+	padding: 2px;
+	cursor: pointer;
+}
+
+#container .rows .menu form input {
+	height: 20px;
+	border: none;
+	text-indent: 5px;
+	color: #827717;
+}
+
+#container .rows .menu form input:focus {
+	outline: none;
+}
+
+#container .rows .menu .profile {
+	padding-top: 7px;
+	display: block;
+}
+
+	                        /* MENU CLOSE   */
+
+
+
+</style>
