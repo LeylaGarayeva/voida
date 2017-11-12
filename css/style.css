@@ -1,4 +1,4 @@
---------------------------------------*/
+/*--------------------------------------*/
 /*          Leyla Garayeva              */
 /*--------------------------------------*/
 	html,body{
@@ -146,7 +146,7 @@
 	}
 	.search img{
 		position: absolute;
-		top:0;
+		top:-8px;
 		left: 5px;
 	}
 	.search input{
@@ -156,7 +156,7 @@
 	}
 	.menu{
 		background: #827717;
-    	    margin: 0px 4px;
+    	 margin: 0px 0px 0px 16px;
     	border-bottom: 3px solid #352e0b;
 	}
 	.guest img:first-child{
@@ -164,6 +164,9 @@
 	    border-radius: 100%;
 	    padding: 3px;
 
+	}
+	.search input{
+		width: 120px;
 	}
 /* /HEADER */
 
@@ -347,13 +350,13 @@
 		}
 		.stars_img{
 			background: #2b2b2b;
-			transform: skew(-30deg, 0deg);
+			/*transform: skew(-30deg, 0deg);*/
 			width: 55%;
 			margin-right: 10px;
 			}
 		.stars_heart{
 			background: #2b2b2b;
-			transform: skew(-30deg, 0deg);
+			/*transform: skew(-30deg, 0deg);*/
 			width: 35%;
 		}
 		.left_blok .active{
@@ -443,10 +446,174 @@
 	/* NEW GAMES*/
 	.new_games{
 		margin-left:30px;
+		padding: 20px 0px;
 	}
-		.bloks img{
+	.bloks img{
 			width: 100%;
-		}
-	/* / NEW GAMES*/
+	}
+	
+.bloks .img {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
 
-/* /CONTENT 
+
+.bloks .img > img {
+	width: 100%;
+	height: 100%;
+}
+
+.bloks .img .top-img {
+	width: 30%;
+	margin-left: 70%;
+	padding-top: 20px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bloks .img .mask {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+	transform:translateY(-100px);
+	transition:all .5s linear;
+	text-align: center;
+}
+
+.bloks .img .mask h2 {
+	color: #fff;
+	margin-top: 5%;
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+.bloks .img .mask a {
+	width: 50%;
+	padding: 2px;
+	display: block;
+	background-color: #fff;
+	text-decoration: none;
+	margin-left: 25%;
+	margin-top: 0%;
+	color: #948e1e;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.bloks .img:hover .mask {
+	transform:translateY(0px);
+}
+.stars_new_games{
+	width: 48%;
+    margin-right: 9%;
+    margin-left: 8%;
+	background: #2b2b2b;
+	padding: 2px 5px;
+}
+.stars_new_games img{
+	width: 10%;
+}
+.heart_new_games{
+	background: #2b2b2b;
+	width: 25%;
+	color:white;
+	padding: 2px 5px;
+}
+.heart_new_games img{
+	width: 35%;
+	margin-left: 5px;
+}
+.blok_buttom{
+	background: #1a1a1a;
+	height: 65px;
+	margin-bottom: 10px;
+}
+.blok_buttom>p{
+	font-size: 9px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+.margin{
+	margin-left: -20px;
+}
+
+
+/*RIGHT SIDE*/
+	.right_side1{
+		border:1px solid silver;
+		height: 330px;
+		margin-right: 36px;
+        margin-left: -36px;
+        padding: 15px;
+        color:black;
+        font-size: 10px;
+	}
+	.right_side1>p{
+		color:black;
+		font-weight: bold;
+
+	}
+	.right_side1 .top{
+		border-bottom: 1px solid silver;
+		position: relative;
+	}
+	.right_side1 .top span:nth-of-type(2){
+		margin-left:45px;
+	}
+	.right_side1 .top span:nth-of-type(3){
+		margin-left:15px;
+	}
+	.right_side1 .top span:first-child{
+		border-bottom: 2px solid black;
+		position: absolute;
+		top:0;
+	}
+	.right_side1 .bottom {
+		font-weight: bold;
+		margin:8px 0px;
+	}
+	.right_side1 .bottom .line>img{
+		border-radius: 100%;
+    	background: white;
+    	padding: 5px;
+    	margin-bottom: 4px;
+	}
+	.right_side1 .bottom .line>span{
+		margin-left: 20px;
+	}
+	.right_side2{
+		border: 1px solid silver;
+	    height: 178px;
+	    margin-right: 36px;
+	    margin-left: -36px;
+	    padding: 15px;
+	    color: black;
+	    font-size: 10px;
+	    margin-top: 8px;
+	}
+	.right_side2>p{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	.right_side2 .line{
+		border-top: 2px solid silver;
+		margin-bottom: 8px;
+	}
+	.right_side2>span{
+		background: #666;
+        color: white;
+        padding: 3px 6px;
+	}
+/* /RIGHT SIDE*/
+
+/* /CONTENT */
+
+
